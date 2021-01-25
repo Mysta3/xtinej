@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+
+<h2 class="vendor_list_title">Vendors <a href="{% url 'vendor_create' %}">(+)</a></h2>
+<hr/>
+<div class="vendor_list_content">
+    {% for vendor in vendors %}
+    <p class="vendor_item">
+        <a href="{% url 'vendor_detail' pk=vendor.pk %}">{{ vendor.name }}</a>
+    </p>
+    {% endfor %}
+</div>
+{% endblock %}

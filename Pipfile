@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+psycopg2-binary = "*"
+gunicorn = "*"
+whitenoise = "*"
+dj-database-url = "*"
+django-heroku = "*"
+python-decouple = "*"
+django-import-export = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

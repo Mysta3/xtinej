@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% block content %}
+<h2 class="vendor_name"> {{ vendor.name }} <a href="{% url 'vendor_edit' pk=vendor.pk %}">(edit)</a><a href="{% url 'vendor_delete' pk=vendor.pk %}">Delete</a></h2>
+<hr>
+<h3 class="vendor_information_detail"> Vendor Information</h3>
+<div class="vendor_detail_content">
+    <ul class="list_container_detail">
+    <li>
+        <a class="vendor_url" href="{{ vendor.url }}">See Product</a>
+    </li>
+    <li>
+        Area: <span class="vendor_info">{{ vendor.area }}</span>
+    </li>
+    <li>
+        Aesthetic: <span class="vendor_info">{{ vendor.aesthetic }}</span>
+    </li>
+    <li>
+        Country: <span class="vendor_info">{{ vendor.country }}</span>
+    </li>
+    <li>
+        State: <span class="vendor_info">{{ vendor.state }}</span>
+    </li>
+    <li>
+        Wholesale: <span class="vendor_info">{{ vendor.wholesale }}</span>
+    </li>
+    <li>
+        Black Owned: <span class="vendor_info">{{ vendor.black_owned }}</span>
+    </li>
+    <li>
+        Minority Owned: <span class="vendor_info">{{ vendor.minority_owned }}</span>
+    </li>
+    <li>
+        Woman Owned: <span class="vendor_info">{{ vendor.woman_owned }}</span>
+    </li>
+    <li>
+        Small Business: <span class="vendor_info">{{ vendor.small_business }}</span>
+    </li>
+    <li>
+        Sustainable: <span class="vendor_info">{{ vendor.sustainable }}</span>
+    </li>
+    <li>
+        Vegan: <span class="vendor_info">{{ vendor.vegan }}</span>
+    </li>
+    <li>
+        Quarter Used: <span class="vendor_info">{{ vendor.quarter_used }}</span>
+    </li>
+    <li>
+        Box Used: <span class="vendor_info">{{ vendor.box_used }}</span>
+    </li>
+    <li>
+        Notes: <span class="vendor_info">{{ vendor.notes }}</span>
+    </li>
+</ul>
+</div>
+{% endblock %}
