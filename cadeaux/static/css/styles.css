@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 .header {
   background: black;
@@ -198,10 +199,8 @@ nav a {
 .vendor_detail_content,
 form {
   background: #e2725b;
-  border: 3px solid black;
-  border-radius: 5%;
+  border: 1px solid black;
   box-shadow: 0px 5px 10px black;
-  margin: 0 3%;
 }
 
 .list_container_detail {
@@ -225,13 +224,26 @@ form {
   color: whitesmoke;
 }
 
+.vendor-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 60vw;
+  margin: 1% 20%;
+}
+
+.vendor-form p {
+  padding: 1%;
+}
+
+.vendor-form .save button {
+  display: block;
+}
+
 form {
   padding: 3%;
 }
-textarea {
-  width: 80vw;
-  padding: 1%;
-}
+
 input,
 textarea {
   border: 2px solid black;
@@ -243,8 +255,11 @@ input {
 
 button {
   padding: 2% 5%;
+  margin: 2%;
   color: black;
   background: gold;
+  border: none;
+  border-radius: 5%;
 }
 
 button:hover {
