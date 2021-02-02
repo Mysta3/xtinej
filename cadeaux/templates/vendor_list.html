@@ -4,9 +4,13 @@
 <hr/>
 <div class="vendor_list_content">
     {% for vendor in vendors %}
-    <p class="vendor_item">
-        <a href="{% url 'vendor_detail' pk=vendor.pk %}">{{ vendor.name }}</a>
-    </p>
+    <div class="item_card">
+        <p class="vendor_item">
+            <a href="{% url 'vendor_detail' pk=vendor.pk %}">{{ vendor.name }}</a>
+        </p>
+        <hr>
+        <small><strong>{{ vendor.area }}</strong></small>
+    </div>
     {% endfor %}
 </div>
 {% endblock %}
