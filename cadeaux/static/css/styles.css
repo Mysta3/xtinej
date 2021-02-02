@@ -192,22 +192,31 @@ nav a {
 
 /* DETAIL BASE STYLES */
 
-.vendor_information_detail {
-  text-decoration: underline gold;
+.vendor_name {
+  text-align: center;
 }
 
-.vendor_detail_content,
+.vendor_information_detail {
+  text-decoration: underline black;
+  font-size: 2rem;
+  margin: 2%;
+}
+
 form {
   background: #e2725b;
   border: 1px solid black;
   box-shadow: 0px 5px 10px black;
 }
 
+.vendor_detail_content {
+  min-height: 50vh;
+  color: black;
+}
+
 .list_container_detail {
-  display: flex;
+  display:  flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5%;
 }
 
 .vendor_url {
@@ -217,13 +226,14 @@ form {
 .list_container_detail li {
   color: black;
   list-style-type: none;
-  padding: 0 2%;
+  padding: 3% 2%;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.vendor_info {
-  color: whitesmoke;
+.vendor_info{
+  text-decoration: underline;
 }
-
 .vendor-form {
   display: flex;
   flex-direction: row;
