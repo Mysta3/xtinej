@@ -3,13 +3,13 @@
 {% endif %}
 
 {% if next %}
-    <p>PLease login to see this page</p>
+    <p id="error_message">Please Login To See This Page</p>
 {% endif %}
 
-<form method="post" action="{% url 'login' %}">
+<form id="login_form" method="post" action="{% url 'login' %}">
     {% csrf_token %} {{form.as_p}}
 
-    <input class="form-btn" type="submit" value="login"/>
+    <input id="login_button" class="form-btn" type="submit" value="login"/>
     <input type="hidden" name="next" value="{{ next }}"/>
 </form>
 
