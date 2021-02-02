@@ -82,6 +82,8 @@ nav a {
   top: 15%;
   font-size: 2rem;
   padding: 1%;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 
 #login_form {
@@ -107,6 +109,28 @@ nav a {
   border: 1px solid black;
   background-color: lightgreen;
   color: white;
+}
+
+#logout_content {
+  text-align: center;
+  font-size: 2rem;
+  padding: 5%;
+}
+
+#logout_tag {
+  color: white;
+  background: rgb(33, 138, 33);
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  padding: 2%;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+#logout_content a {
+  margin-top: 30%;
 }
 
 .footer {
